@@ -39,15 +39,9 @@ function prepareArgs(
   type?: ResourceSpec["type"]
 ) {
   if (type === "collection") {
-    if (args.offset === undefined) {
-      return {
-        limit: 10,
-        page: 1,
-        ...args,
-      };
-    }
     return {
       limit: 10,
+      page: 1,
       ...args,
     };
   }
@@ -101,6 +95,7 @@ export function createResource<ReturnType, Args = {}>(
 
     return config
       .httpClient(urlWithQueryParams, {
+        timeout: config.timeout,
         method: spec.method,
         headers: {
           Authorization: `Bearer ${config.apiKey}`,

@@ -13,6 +13,7 @@ describe("Movie Resource", () => {
       expect(resp).to.deep.equal({
         url: "https://the-one-api.dev/v2/movie/movieId",
         method: "GET",
+        timeout: 10000,
         headers: {
           Authorization: "Bearer token",
           "Content-Type": "application/json",
@@ -27,6 +28,7 @@ describe("Movie Resource", () => {
       expect(resp).to.deep.equal({
         url: "https://the-one-api.dev/v2/movie?limit=10&page=1",
         method: "GET",
+        timeout: 10000,
         headers: {
           Authorization: "Bearer token",
           "Content-Type": "application/json",
@@ -41,6 +43,7 @@ describe("Movie Resource", () => {
       expect(resp).to.deep.equal({
         url: "https://the-one-api.dev/v2/movie/movieId/quote?limit=10&page=1",
         method: "GET",
+        timeout: 10000,
         headers: {
           Authorization: "Bearer token",
           "Content-Type": "application/json",
