@@ -1,5 +1,5 @@
 # Lord of the Rings Node.js Library
-[!Version](https://www.npmjs.com/package/lotr-sdk-vroy)
+[![Version](https://img.shields.io/npm/v/lotr-sdk-vroy.svg)](https://www.npmjs.com/package/lotr-sdk-vroy)
 The Lord of the Rings Node.js library provides an easy way to access information about the Lord of the Rings from the Lord of the Rings API.
 
 ## Requirements
