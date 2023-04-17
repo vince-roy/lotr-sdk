@@ -32,7 +32,7 @@ Or using ES modules and `async`/`await`:
 
 ```js
 import lotr from 'lotr-sdk-vroy';
-const lortClient = lotr('some_api_key_from_one_api')
+const lotrClient = lotr('some_api_key_from_one_api')
 
 const {docs: movies} = await lotrClient.movie.list({})
 
@@ -42,7 +42,7 @@ console.log(movies);
 ### Usage with TypeScript
 ```ts
 import lotr from 'lotr-sdk-vroy';
-const lortClient = lotr('some_api_key_from_one_api')
+const lotrClient = lotr('some_api_key_from_one_api')
 
 const {docs: movies} = await lotrClient.movie.list({})
 // movies will have typese
