@@ -7,7 +7,7 @@ export function lotr(apiKey: string, userConfig: Partial<SDKConfig> = {}) {
     apiKey,
     httpClient: fetch,
     maxNetworkRetries: 0,
-    timeout: 1000,
+    timeout: 10000,
     host: "the-one-api.dev",
     protocol: "https",
     ...userConfig,

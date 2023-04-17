@@ -6,3 +6,5 @@
 
 - test structure mirrors src
 - esm vs commonjs
+
+- auto paging
