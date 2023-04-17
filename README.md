@@ -19,9 +19,9 @@ yarn add lotr-sdk-vroy
 You'll need an access key from [the-one-api](https://the-one-api.dev) account area here: [https://the-one-api.dev/sign-up](https://the-one-api.dev/sign-up).
 
 ```js
-const lotr = require('lotr-sdk-vroy')('your_key_from_one_api');
+const { lotr } = require('lotr-sdk-vroy');
 
-lotr.movie.list({})
+lotr('your_key_from_one_api').movie.list({})
   .then(resp => console.log(resp.docs))
   .catch(error => console.error(error));
 ```
@@ -29,7 +29,7 @@ lotr.movie.list({})
 Or using ES modules and `async`/`await`:
 
 ```js
-import lotr from 'lotr-sdk-vroy';
+import { lotr } from 'lotr-sdk-vroy';
 const lotrClient = lotr('some_api_key_from_one_api')
 
 const {docs: movies} = await lotrClient.movie.list({})
@@ -39,7 +39,7 @@ console.log(movies);
 
 ### Usage with TypeScript
 ```ts
-import lotr from 'lotr-sdk-vroy';
+import { lotr } from 'lotr-sdk-vroy';
 const lotrClient = lotr('some_api_key_from_one_api')
 
 const {docs: movies} = await lotrClient.movie.list({})
