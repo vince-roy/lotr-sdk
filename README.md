@@ -1,5 +1,6 @@
 # Lord of the Rings Node.js Library
 [![Version](https://img.shields.io/npm/v/lotr-sdk-vroy.svg)](https://www.npmjs.com/package/lotr-sdk-vroy)
+
 The Lord of the Rings Node.js library provides an easy way to access information about the Lord of the Rings from the Lord of the Rings API.
 
 ## Requirements
@@ -9,9 +10,9 @@ Node.js version 12 or higher
 Use one of the following commands in your favorite terminal:
 
 ```sh
-npm install lotr-node
+npm install lotr-sdk-vroy
 # or
-yarn add lotr-node
+yarn add lotr-sdk-vroy
 ```
 
 ## Usage
@@ -20,7 +21,7 @@ You'll need an access key from [the-one-api](https://the-one-api.dev) account ar
 **Note: the page parameters for lists did not seem to be working on the the-one-api server as of 2023-04-17**
 
 ```js
-const lotr = require('lotr-node')('your_key_from_one_api');
+const lotr = require('lotr-sdk-vroy')('your_key_from_one_api');
 
 lotr.movie.list({})
   .then(resp => console.log(resp.docs))
@@ -30,7 +31,7 @@ lotr.movie.list({})
 Or using ES modules and `async`/`await`:
 
 ```js
-import lotr from 'lotr';
+import lotr from 'lotr-sdk-vroy';
 const lortClient = lotr('some_api_key_from_one_api')
 
 const {docs: movies} = await lotrClient.movie.list({})
@@ -40,7 +41,7 @@ console.log(movies);
 
 ### Usage with TypeScript
 ```ts
-import lotr from 'lotr';
+import lotr from 'lotr-sdk-vroy';
 const lortClient = lotr('some_api_key_from_one_api')
 
 const {docs: movies} = await lotrClient.movie.list({})
