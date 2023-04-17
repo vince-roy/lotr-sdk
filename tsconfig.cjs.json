@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+      "declaration": true,
       "outDir": "./cjs",
       "module": "commonjs",
       "target": "es2017",

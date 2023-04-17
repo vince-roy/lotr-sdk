@@ -2,7 +2,7 @@
   "description": "Lord of the Rings API Node SDK",
   "name": "lotr-sdk-vroy",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "dev": "vite",
     "build": "npm run build-esm && npm run build-cjs",
