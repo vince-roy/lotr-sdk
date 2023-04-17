@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "declaration": true,
+      "outDir": "./esm",
+      "module": "es2022",
+      "noEmit": false
+    },
+    "include": ["src"]
+  }
