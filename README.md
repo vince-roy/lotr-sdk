@@ -18,8 +18,6 @@ yarn add lotr-sdk-vroy
 ## Usage
 You'll need an access key from [the-one-api](https://the-one-api.dev) account area here: [https://the-one-api.dev/sign-up](https://the-one-api.dev/sign-up).
 
-**Note: the page parameters for lists did not seem to be working on the the-one-api server as of 2023-04-17**
-
 ```js
 const lotr = require('lotr-sdk-vroy')('your_key_from_one_api');
 
